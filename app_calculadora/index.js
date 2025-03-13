@@ -1,6 +1,16 @@
+const express = require('express');
 const calc = require('./calculadora');
+const app = express();
 
-console.log(calc.somar (3, 5));
-console.log(calc.subtrair (3, 5));
-console.log(calc.multiplicar (3, 5));
-console.log(calc.dividir (3, 5));
+app.get('/ola', (req, res)=>{
+    res.send('Hello, World!');
+});
+
+app.get('/ola/:nome', (req, res)=>{
+    res.send('Olá, ' + req.params.nome);
+});
+
+const PORT = 8080;
+app.listen(PORT, ()=>{
+    console.log('app rodando na porta ' + PORT);
+});
