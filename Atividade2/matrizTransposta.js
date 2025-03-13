@@ -1,6 +1,6 @@
 function transporMatriz(m){
     console.log('Matriz \n')
-    for(let i = 0; i < m.length; j++){
+    for(let i = 0; i < m.length; i++){
         let linha = "";
         
         for(let j = 0; j < m[i].length; j++){
