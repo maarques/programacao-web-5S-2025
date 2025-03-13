@@ -1,4 +1,5 @@
 function transporMatriz(m){
+    console.log('Matriz \n')
     for(let i = 0; i < m.length; j++){
         let linha = "";
         
@@ -26,4 +27,4 @@ let matriz = [
     [5,6]
 ]
 
-transporMatriz(m);
+transporMatriz(matriz);
